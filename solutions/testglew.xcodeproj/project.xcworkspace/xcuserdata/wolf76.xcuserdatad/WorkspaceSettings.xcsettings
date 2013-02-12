@@ -4,12 +4,8 @@
 <dict>
 	<key>BuildLocationStyle</key>
 	<string>UseAppPreferences</string>
-	<key>CustomBuildIntermediatesPath</key>
-	<string>Build/Intermediates</string>
 	<key>CustomBuildLocationType</key>
-	<string>RelativeToWorkspace</string>
-	<key>CustomBuildProductsPath</key>
-	<string>..\common\lib</string>
+	<string>RelativeToDerivedData</string>
 	<key>DerivedDataLocationStyle</key>
 	<string>Default</string>
 	<key>IssueFilterStyle</key>
