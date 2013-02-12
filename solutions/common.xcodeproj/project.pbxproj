@@ -9,12 +9,26 @@
 /* Begin PBXBuildFile section */
 		8E08FDDF16CA5E630011819A /* glew.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E08FDDD16CA5E630011819A /* glew.c */; };
 		8E08FDE016CA5E630011819A /* glslprogram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E08FDDE16CA5E630011819A /* glslprogram.cpp */; };
+		8EB2BDD916CA815100AF4848 /* drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EB2BDD116CA815100AF4848 /* drawable.cpp */; };
+		8EB2BDDA16CA815100AF4848 /* glutils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EB2BDD216CA815100AF4848 /* glutils.cpp */; };
+		8EB2BDDC16CA815100AF4848 /* vbocube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EB2BDD416CA815100AF4848 /* vbocube.cpp */; };
+		8EB2BDDD16CA815100AF4848 /* vbomesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EB2BDD516CA815100AF4848 /* vbomesh.cpp */; };
+		8EB2BDDE16CA815100AF4848 /* vboplane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EB2BDD616CA815100AF4848 /* vboplane.cpp */; };
+		8EB2BDDF16CA815100AF4848 /* vboteapot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EB2BDD716CA815100AF4848 /* vboteapot.cpp */; };
+		8EB2BDE016CA815100AF4848 /* vbotorus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EB2BDD816CA815100AF4848 /* vbotorus.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8E08FDD616CA5DF00011819A /* libcommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E08FDDD16CA5E630011819A /* glew.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glew.c; path = ../common/src/glew.c; sourceTree = SOURCE_ROOT; };
 		8E08FDDE16CA5E630011819A /* glslprogram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = glslprogram.cpp; path = ../common/src/glslprogram.cpp; sourceTree = SOURCE_ROOT; };
+		8EB2BDD116CA815100AF4848 /* drawable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = drawable.cpp; path = ../common/src/drawable.cpp; sourceTree = "<group>"; };
+		8EB2BDD216CA815100AF4848 /* glutils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = glutils.cpp; path = ../common/src/glutils.cpp; sourceTree = "<group>"; };
+		8EB2BDD416CA815100AF4848 /* vbocube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vbocube.cpp; path = ../common/src/vbocube.cpp; sourceTree = "<group>"; };
+		8EB2BDD516CA815100AF4848 /* vbomesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vbomesh.cpp; path = ../common/src/vbomesh.cpp; sourceTree = "<group>"; };
+		8EB2BDD616CA815100AF4848 /* vboplane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vboplane.cpp; path = ../common/src/vboplane.cpp; sourceTree = "<group>"; };
+		8EB2BDD716CA815100AF4848 /* vboteapot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vboteapot.cpp; path = ../common/src/vboteapot.cpp; sourceTree = "<group>"; };
+		8EB2BDD816CA815100AF4848 /* vbotorus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vbotorus.cpp; path = ../common/src/vbotorus.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,13 @@
 		8E08FDCD16CA5DF00011819A = {
 			isa = PBXGroup;
 			children = (
+				8EB2BDD116CA815100AF4848 /* drawable.cpp */,
+				8EB2BDD216CA815100AF4848 /* glutils.cpp */,
+				8EB2BDD416CA815100AF4848 /* vbocube.cpp */,
+				8EB2BDD516CA815100AF4848 /* vbomesh.cpp */,
+				8EB2BDD616CA815100AF4848 /* vboplane.cpp */,
+				8EB2BDD716CA815100AF4848 /* vboteapot.cpp */,
+				8EB2BDD816CA815100AF4848 /* vbotorus.cpp */,
 				8E08FDDD16CA5E630011819A /* glew.c */,
 				8E08FDDE16CA5E630011819A /* glslprogram.cpp */,
 				8E08FDD716CA5DF00011819A /* Products */,
@@ -108,6 +129,13 @@
 			files = (
 				8E08FDDF16CA5E630011819A /* glew.c in Sources */,
 				8E08FDE016CA5E630011819A /* glslprogram.cpp in Sources */,
+				8EB2BDD916CA815100AF4848 /* drawable.cpp in Sources */,
+				8EB2BDDA16CA815100AF4848 /* glutils.cpp in Sources */,
+				8EB2BDDC16CA815100AF4848 /* vbocube.cpp in Sources */,
+				8EB2BDDD16CA815100AF4848 /* vbomesh.cpp in Sources */,
+				8EB2BDDE16CA815100AF4848 /* vboplane.cpp in Sources */,
+				8EB2BDDF16CA815100AF4848 /* vboteapot.cpp in Sources */,
+				8EB2BDE016CA815100AF4848 /* vbotorus.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
