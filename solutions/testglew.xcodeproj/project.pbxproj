@@ -10,10 +10,25 @@
 		8EBC0EDE16C7BB5F00CD4DB9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EBC0EDD16C7BB5F00CD4DB9 /* main.cpp */; };
 		8EBC0EE016C7BB6000CD4DB9 /* testglew.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8EBC0EDF16C7BB6000CD4DB9 /* testglew.1 */; };
 		8EBC0EE916C7DC7400CD4DB9 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EBC0EE816C7DC7400CD4DB9 /* GLUT.framework */; };
-		8EDD29EE16CA33F000AF1308 /* glew.c in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD29ED16CA33F000AF1308 /* glew.c */; };
 		8EDD29F016CA35DE00AF1308 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EDD29EF16CA35DE00AF1308 /* OpenGL.framework */; };
-		8EDD29F216CA3CCF00AF1308 /* glslprogram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD29F116CA3CCF00AF1308 /* glslprogram.cpp */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E08FFAE16CA773B0011819A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E08FF9F16CA6FD90011819A /* common.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8E08FDD616CA5DF00011819A;
+			remoteInfo = common;
+		};
+		8E08FFB016CA77BE0011819A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E08FF9F16CA6FD90011819A /* common.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E08FDD516CA5DF00011819A;
+			remoteInfo = common;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		8EBC0ED816C7BB5F00CD4DB9 /* CopyFiles */ = {
@@ -29,13 +44,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8E08FF9F16CA6FD90011819A /* common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = common.xcodeproj; sourceTree = SOURCE_ROOT; };
 		8EBC0EDA16C7BB5F00CD4DB9 /* testglew */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testglew; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EBC0EDD16C7BB5F00CD4DB9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		8EBC0EDF16C7BB6000CD4DB9 /* testglew.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = testglew.1; sourceTree = "<group>"; };
+		8EBC0EDD16C7BB5F00CD4DB9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../testglew/main.cpp; sourceTree = SOURCE_ROOT; };
+		8EBC0EDF16C7BB6000CD4DB9 /* testglew.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; name = testglew.1; path = ../testglew/testglew.1; sourceTree = SOURCE_ROOT; };
 		8EBC0EE816C7DC7400CD4DB9 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
-		8EDD29ED16CA33F000AF1308 /* glew.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glew.c; sourceTree = "<group>"; };
 		8EDD29EF16CA35DE00AF1308 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		8EDD29F116CA3CCF00AF1308 /* glslprogram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glslprogram.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +65,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E08FFAB16CA773B0011819A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E08FFAF16CA773B0011819A /* libcommon.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8EBC0ED116C7BB5F00CD4DB9 = {
 			isa = PBXGroup;
 			children = (
+				8E08FF9F16CA6FD90011819A /* common.xcodeproj */,
 				8EDD29EF16CA35DE00AF1308 /* OpenGL.framework */,
 				8EBC0EE816C7DC7400CD4DB9 /* GLUT.framework */,
 				8EBC0EDC16C7BB5F00CD4DB9 /* testglew */,
@@ -72,8 +95,6 @@
 		8EBC0EDC16C7BB5F00CD4DB9 /* testglew */ = {
 			isa = PBXGroup;
 			children = (
-				8EDD29F116CA3CCF00AF1308 /* glslprogram.cpp */,
-				8EDD29ED16CA33F000AF1308 /* glew.c */,
 				8EBC0EDD16C7BB5F00CD4DB9 /* main.cpp */,
 				8EBC0EDF16C7BB6000CD4DB9 /* testglew.1 */,
 			);
@@ -94,6 +115,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				8E08FFB116CA77BE0011819A /* PBXTargetDependency */,
 			);
 			name = testglew;
 			productName = testglew;
@@ -119,6 +141,12 @@
 			mainGroup = 8EBC0ED116C7BB5F00CD4DB9;
 			productRefGroup = 8EBC0EDB16C7BB5F00CD4DB9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8E08FFAB16CA773B0011819A /* Products */;
+					ProjectRef = 8E08FF9F16CA6FD90011819A /* common.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8EBC0ED916C7BB5F00CD4DB9 /* testglew */,
@@ -126,18 +154,34 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		8E08FFAF16CA773B0011819A /* libcommon.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcommon.a;
+			remoteRef = 8E08FFAE16CA773B0011819A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8EBC0ED616C7BB5F00CD4DB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8EBC0EDE16C7BB5F00CD4DB9 /* main.cpp in Sources */,
-				8EDD29EE16CA33F000AF1308 /* glew.c in Sources */,
-				8EDD29F216CA3CCF00AF1308 /* glslprogram.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E08FFB116CA77BE0011819A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = common;
+			targetProxy = 8E08FFB016CA77BE0011819A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8EBC0EE116C7BB6000CD4DB9 /* Debug */ = {
@@ -202,9 +246,9 @@
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "";
-				HEADER_SEARCH_PATHS = $SRCROOT/testglew/include;
+				HEADER_SEARCH_PATHS = $SRCROOT/../common/include;
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-lcommon";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -213,9 +257,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = "";
-				HEADER_SEARCH_PATHS = $SRCROOT/testglew/include;
+				HEADER_SEARCH_PATHS = $SRCROOT/../common/include;
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-lcommon";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
