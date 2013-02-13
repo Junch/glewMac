@@ -246,9 +246,16 @@
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "";
-				HEADER_SEARCH_PATHS = $SRCROOT/../common/include;
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_LDFLAGS = "-lcommon";
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					$SRCROOT/../common/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lcommon",
+					"-lglew",
+					"-lglfw",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -257,9 +264,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = "";
-				HEADER_SEARCH_PATHS = $SRCROOT/../common/include;
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_LDFLAGS = "-lcommon";
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					$SRCROOT/../common/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lcommon",
+					"-lglew",
+					"-lglfw",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -3,19 +3,13 @@
 
 #include <stdio.h>
 #include <GL/glew.h>
-
-#ifdef __APPLE__
-#include <glut/glut.h>          // OS X version of GLUT
-#else
-#include <GL/glut.h>            // Windows FreeGlut equivalent
-#endif
-
+#include <GL/glfw.h>
 #include "glslprogram.h"
 
 GLSLProgram prog;
 GLuint vaoHandle;
 
-static const char * szIdentityShaderVP = "#version 130 \n"
+static const char * szIdentityShaderVP = "#version 400 \n"
 "in vec3 vVertex;"
 "in vec3 vColor;"
 "out vec3 Color;"
@@ -24,7 +18,7 @@ static const char * szIdentityShaderVP = "#version 130 \n"
 "  gl_Position = vec4(vVertex, 1.0);"
 "}";
 
-static const char * szIdentityShaderFP = "#version 130 \n"
+static const char * szIdentityShaderFP = "#version 400 \n"
 "in vec3 Color;"
 "out vec4 FragColor;"
 "void main(void)"
@@ -108,9 +102,6 @@ void RenderScene( void)
     
     glBindVertexArray(vaoHandle );
     glDrawArrays(GL_TRIANGLES , 0 , 3 );
-    
-    // Perform the buffer swap to display back buffer
-    glutSwapBuffers();
 }
 
 
@@ -118,21 +109,36 @@ void RenderScene( void)
 // Main entry point for GLUT based programs
 int main( int argc , char * argv [])
 {
-    glutInit(&argc , argv );
-    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH | GLUT_STENCIL );
-    glutInitWindowSize(800 , 600 );
-    glutCreateWindow("Triangle" );
-    glutReshapeFunc(ChangeSize );
-    glutDisplayFunc(RenderScene );
+    // initialise GLFW
+    if(!glfwInit())
+        throw std::runtime_error("glfwInit failed");
     
-    GLenum err = glewInit();
-    if ( GLEW_OK != err) {
-        fprintf(stderr , "GLEW Error: %s\n" , glewGetErrorString (err));
-        return 1 ;
-    }
+    // open a window with GLFW
+    glfwOpenWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    glfwOpenWindowHint(GLFW_OPENGL_VERSION_MAJOR, 3);
+    glfwOpenWindowHint(GLFW_OPENGL_VERSION_MINOR, 2);
+    glfwOpenWindowHint(GLFW_WINDOW_NO_RESIZE, GL_TRUE);
+    if(!glfwOpenWindow(800, 600, 0, 0, 0, 0, 0, 0, GLFW_WINDOW))
+        throw std::runtime_error("glfwOpenWindow failed. Can your hardware handle OpenGL 3.2?");
+    
+    // initialise GLEW
+    glewExperimental = GL_TRUE; //stops glew crashing on OSX :-/
+    if (GLEW_OK != glewInit())
+        throw std::runtime_error("glewInit failed");
+    
+    // make sure OpenGL version 3.2 API is available
+    if(!GLEW_VERSION_3_2)
+        throw std::runtime_error("OpenGL 3.2 API is not available.");
+    
+    glfwSetWindowSizeCallback(ChangeSize);
     
     SetupRC();
     
-    glutMainLoop();
-    return 0 ;
+    while(glfwGetWindowParam(GLFW_OPENED))
+    {
+        RenderScene();
+        glfwSwapBuffers();
+    }
+    
+    glfwTerminate();
 }

@@ -6,7 +6,7 @@
 //#include <GL/gl.h>
 
 #ifdef Q_OS_MAC
-#include <OpenGL/gl.h>
+#include <OpenGL/gl3.h>
 #endif
 
 #include <cstdio>
