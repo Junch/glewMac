@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8EB2BE1616CA8D1000AF4848 /* phong.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EB2BE1516CA8D1000AF4848 /* phong.cpp */; };
+		8EB2BE2516CA8E7100AF4848 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB2BE2416CA8E7100AF4848 /* GLUT.framework */; };
+		8EB2BE2716CA8E7800AF4848 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB2BE2616CA8E7800AF4848 /* OpenGL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8EB2BE2216CA8E6100AF4848 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EB2BE1E16CA8E6000AF4848 /* common.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8E08FDD616CA5DF00011819A;
+			remoteInfo = common;
+		};
+		8EB2BE2816CA8E9100AF4848 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EB2BE1E16CA8E6000AF4848 /* common.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E08FDD516CA5DF00011819A;
+			remoteInfo = common;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8EB2BE0716CA8C9800AF4848 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8EB2BE0916CA8C9800AF4848 /* phong */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = phong; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EB2BE1516CA8D1000AF4848 /* phong.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = phong.cpp; path = ../../phong/phong.cpp; sourceTree = "<group>"; };
+		8EB2BE1E16CA8E6000AF4848 /* common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = common.xcodeproj; sourceTree = "<group>"; };
+		8EB2BE2416CA8E7100AF4848 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		8EB2BE2616CA8E7800AF4848 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8EB2BE0616CA8C9800AF4848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EB2BE2716CA8E7800AF4848 /* OpenGL.framework in Frameworks */,
+				8EB2BE2516CA8E7100AF4848 /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8EB2BE0016CA8C9800AF4848 = {
+			isa = PBXGroup;
+			children = (
+				8EB2BE2616CA8E7800AF4848 /* OpenGL.framework */,
+				8EB2BE2416CA8E7100AF4848 /* GLUT.framework */,
+				8EB2BE1E16CA8E6000AF4848 /* common.xcodeproj */,
+				8EB2BE0B16CA8C9800AF4848 /* phong */,
+				8EB2BE0A16CA8C9800AF4848 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8EB2BE0A16CA8C9800AF4848 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EB2BE0916CA8C9800AF4848 /* phong */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EB2BE0B16CA8C9800AF4848 /* phong */ = {
+			isa = PBXGroup;
+			children = (
+				8EB2BE1516CA8D1000AF4848 /* phong.cpp */,
+			);
+			path = phong;
+			sourceTree = SOURCE_ROOT;
+		};
+		8EB2BE1F16CA8E6000AF4848 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EB2BE2316CA8E6100AF4848 /* libcommon.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8EB2BE0816CA8C9800AF4848 /* phong */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EB2BE1216CA8C9800AF4848 /* Build configuration list for PBXNativeTarget "phong" */;
+			buildPhases = (
+				8EB2BE0516CA8C9800AF4848 /* Sources */,
+				8EB2BE0616CA8C9800AF4848 /* Frameworks */,
+				8EB2BE0716CA8C9800AF4848 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EB2BE2916CA8E9100AF4848 /* PBXTargetDependency */,
+			);
+			name = phong;
+			productName = phong;
+			productReference = 8EB2BE0916CA8C9800AF4848 /* phong */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8EB2BE0116CA8C9800AF4848 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = wolf76;
+			};
+			buildConfigurationList = 8EB2BE0416CA8C9800AF4848 /* Build configuration list for PBXProject "phong" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8EB2BE0016CA8C9800AF4848;
+			productRefGroup = 8EB2BE0A16CA8C9800AF4848 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8EB2BE1F16CA8E6000AF4848 /* Products */;
+					ProjectRef = 8EB2BE1E16CA8E6000AF4848 /* common.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8EB2BE0816CA8C9800AF4848 /* phong */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8EB2BE2316CA8E6100AF4848 /* libcommon.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcommon.a;
+			remoteRef = 8EB2BE2216CA8E6100AF4848 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EB2BE0516CA8C9800AF4848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EB2BE1616CA8D1000AF4848 /* phong.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8EB2BE2916CA8E9100AF4848 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = common;
+			targetProxy = 8EB2BE2816CA8E9100AF4848 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8EB2BE1016CA8C9800AF4848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					$SRCROOT/../common/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8EB2BE1116CA8C9800AF4848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					$SRCROOT/../common/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8EB2BE1316CA8C9800AF4848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-lcommon",
+					"-lglfw",
+					"-lglew",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8EB2BE1416CA8C9800AF4848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-lcommon",
+					"-lglfw",
+					"-lglew",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8EB2BE0416CA8C9800AF4848 /* Build configuration list for PBXProject "phong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EB2BE1016CA8C9800AF4848 /* Debug */,
+				8EB2BE1116CA8C9800AF4848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EB2BE1216CA8C9800AF4848 /* Build configuration list for PBXNativeTarget "phong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EB2BE1316CA8C9800AF4848 /* Debug */,
+				8EB2BE1416CA8C9800AF4848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8EB2BE0116CA8C9800AF4848 /* Project object */;
+}

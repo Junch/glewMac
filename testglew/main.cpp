@@ -102,7 +102,7 @@ void RenderScene( void)
 
 
 ///////////////////////////////////////////////////////////////////////////////
-// Main entry point for GLUT based programs
+// Main entry point for GLFW based programs
 int main( int argc , char * argv [])
 {
     // initialise GLFW
