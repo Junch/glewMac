@@ -1,4 +1,4 @@
 # Mac crap
 .DS_Store
-*.xcuserstate
+xcuserdata
 Build/
