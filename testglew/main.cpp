@@ -9,18 +9,18 @@
 GLSLProgram prog;
 GLuint vaoHandle;
 
-static const char * szIdentityShaderVP = "#version 400 \n"
-"in vec3 vVertex;"
-"in vec3 vColor;"
+static const char * szIdentityShaderVP = "#version 400\n"
+"layout (location = 0) in vec3 vVertex;"
+"layout (location = 1) in vec3 vColor;"
 "out vec3 Color;"
 "void main(void)"
 "{ Color = vColor;"
 "  gl_Position = vec4(vVertex, 1.0);"
 "}";
 
-static const char * szIdentityShaderFP = "#version 400 \n"
+static const char * szIdentityShaderFP = "#version 400\n"
 "in vec3 Color;"
-"out vec4 FragColor;"
+"layout (location = 0) out vec4 FragColor;"
 "void main(void)"
 "{ FragColor = vec4(Color, 1.0);"
 "}";
@@ -48,10 +48,6 @@ void SetupRC()
     
     prog.compileShaderFromString (szIdentityShaderVP, GLSLShader:: VERTEX);
     prog.compileShaderFromString (szIdentityShaderFP, GLSLShader:: FRAGMENT);
-    // These three lines could not be removed
-    prog.bindAttribLocation(0, "vVertex");
-    prog.bindAttribLocation(1, "vColor");
-    prog.bindFragDataLocation(0, "FragColor");
     prog.link ();
     prog.use ();
     
@@ -134,7 +130,7 @@ int main( int argc , char * argv [])
     
     SetupRC();
     
-    while(glfwGetWindowParam(GLFW_OPENED))
+    while(glfwGetWindowParam(GLFW_OPENED) && !glfwGetKey( GLFW_KEY_ESC ))
     {
         RenderScene();
         glfwSwapBuffers();
