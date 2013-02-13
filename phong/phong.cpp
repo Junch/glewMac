@@ -6,6 +6,7 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtx/transform2.hpp>
+#include <iostream>
 
 #include "vbotorus.h"
 #include "glslprogram.h"
@@ -74,9 +75,7 @@ void RenderScene(void)
     torus->render();
 }
 
-///////////////////////////////////////////////////////////////////////////////
-// Main entry point for GLFW based programs
-int main( int argc , char * argv [])
+void AppMain()
 {
     // initialise GLFW
     if(!glfwInit())
@@ -110,4 +109,19 @@ int main( int argc , char * argv [])
     }
     
     glfwTerminate();
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Main entry point for GLFW based programs
+int main( int argc , char * argv [])
+{
+    try {
+        AppMain();
+    } catch (const std::exception& e){
+        std::cerr << "ERROR: " << e.what() << std::endl;
+        return EXIT_FAILURE;
+    }
+    
+    return EXIT_SUCCESS;
 }
