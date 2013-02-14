@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8EA6A31616CCB894009FCD0C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA6A31516CCB894009FCD0C /* OpenGL.framework */; };
+		8EA6A33616CCC694009FCD0C /* phong.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EA6A33316CCC66D009FCD0C /* phong.cpp */; };
+		8EA6A33916CCC6C6009FCD0C /* phong.frag in Resources */ = {isa = PBXBuildFile; fileRef = 8EA6A33416CCC66D009FCD0C /* phong.frag */; };
+		8EA6A33A16CCC6C6009FCD0C /* phong.vert in Resources */ = {isa = PBXBuildFile; fileRef = 8EA6A33516CCC66D009FCD0C /* phong.vert */; };
+		8EFFA93016CCB246003E61B3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFFA92F16CCB246003E61B3 /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8EA6A32F16CCC554009FCD0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EA6A32B16CCC553009FCD0C /* common.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8E08FDD616CA5DF00011819A;
+			remoteInfo = common;
+		};
+		8EA6A33116CCC564009FCD0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EA6A32B16CCC553009FCD0C /* common.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E08FDD516CA5DF00011819A;
+			remoteInfo = common;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8EA6A31516CCB894009FCD0C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		8EA6A32B16CCC553009FCD0C /* common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = common.xcodeproj; sourceTree = "<group>"; };
+		8EA6A33316CCC66D009FCD0C /* phong.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = phong.cpp; path = ../phong/phong.cpp; sourceTree = "<group>"; };
+		8EA6A33416CCC66D009FCD0C /* phong.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = phong.frag; path = ../phong/phong.frag; sourceTree = "<group>"; };
+		8EA6A33516CCC66D009FCD0C /* phong.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = phong.vert; path = ../phong/phong.vert; sourceTree = "<group>"; };
+		8EFFA92C16CCB246003E61B3 /* phongapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = phongapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EFFA92F16CCB246003E61B3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8EFFA92916CCB246003E61B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EA6A31616CCB894009FCD0C /* OpenGL.framework in Frameworks */,
+				8EFFA93016CCB246003E61B3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8EA6A32716CCC4C0009FCD0C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				8EA6A33316CCC66D009FCD0C /* phong.cpp */,
+				8EA6A33416CCC66D009FCD0C /* phong.frag */,
+				8EA6A33516CCC66D009FCD0C /* phong.vert */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		8EA6A32C16CCC553009FCD0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EA6A33016CCC554009FCD0C /* libcommon.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EFFA92316CCB246003E61B3 = {
+			isa = PBXGroup;
+			children = (
+				8EA6A32B16CCC553009FCD0C /* common.xcodeproj */,
+				8EA6A32716CCC4C0009FCD0C /* src */,
+				8EFFA92E16CCB246003E61B3 /* Frameworks */,
+				8EFFA92D16CCB246003E61B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8EFFA92D16CCB246003E61B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EFFA92C16CCB246003E61B3 /* phongapp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EFFA92E16CCB246003E61B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EA6A31516CCB894009FCD0C /* OpenGL.framework */,
+				8EFFA92F16CCB246003E61B3 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8EFFA92B16CCB246003E61B3 /* phongapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EFFA94916CCB246003E61B3 /* Build configuration list for PBXNativeTarget "phongapp" */;
+			buildPhases = (
+				8EFFA92816CCB246003E61B3 /* Sources */,
+				8EFFA92916CCB246003E61B3 /* Frameworks */,
+				8EFFA92A16CCB246003E61B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EA6A33216CCC564009FCD0C /* PBXTargetDependency */,
+			);
+			name = phongapp;
+			productName = phongapp;
+			productReference = 8EFFA92C16CCB246003E61B3 /* phongapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8EFFA92416CCB246003E61B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = wolf76;
+			};
+			buildConfigurationList = 8EFFA92716CCB246003E61B3 /* Build configuration list for PBXProject "phongapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8EFFA92316CCB246003E61B3;
+			productRefGroup = 8EFFA92D16CCB246003E61B3 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8EA6A32C16CCC553009FCD0C /* Products */;
+					ProjectRef = 8EA6A32B16CCC553009FCD0C /* common.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8EFFA92B16CCB246003E61B3 /* phongapp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8EA6A33016CCC554009FCD0C /* libcommon.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcommon.a;
+			remoteRef = 8EA6A32F16CCC554009FCD0C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8EFFA92A16CCB246003E61B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EA6A33916CCC6C6009FCD0C /* phong.frag in Resources */,
+				8EA6A33A16CCC6C6009FCD0C /* phong.vert in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EFFA92816CCB246003E61B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EA6A33616CCC694009FCD0C /* phong.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8EA6A33216CCC564009FCD0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = common;
+			targetProxy = 8EA6A33116CCC564009FCD0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8EFFA94716CCB246003E61B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"/$(SRCROOT)/../common/include",
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lglfw",
+					"-lglew",
+					"-lcommon",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8EFFA94816CCB246003E61B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"/$(SRCROOT)/../common/include",
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = (
+					"-lglfw",
+					"-lglew",
+					"-lcommon",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8EFFA94A16CCB246003E61B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				INFOPLIST_FILE = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8EFFA94B16CCB246003E61B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				INFOPLIST_FILE = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8EFFA92716CCB246003E61B3 /* Build configuration list for PBXProject "phongapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EFFA94716CCB246003E61B3 /* Debug */,
+				8EFFA94816CCB246003E61B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EFFA94916CCB246003E61B3 /* Build configuration list for PBXNativeTarget "phongapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EFFA94A16CCB246003E61B3 /* Debug */,
+				8EFFA94B16CCB246003E61B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8EFFA92416CCB246003E61B3 /* Project object */;
+}
