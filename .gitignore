@@ -1,4 +1,25 @@
 # Mac crap
 .DS_Store
-xcuserdata
 Build/
+####
+# Xcode 4 - semi-personal settings
+#
+#
+# OPTION 1: ---------------------------------
+#     throw away ALL personal settings (including custom schemes!
+#     - unless they are "shared")
+#
+# NB: this is exclusive with OPTION 2 below
+#xcuserdata
+
+# OPTION 2: ---------------------------------
+#     get rid of ALL personal settings, but KEEP SOME OF THEM
+#     - NB: you must manually uncomment the bits you want to keep
+#
+# NB: this is exclusive with OPTION 1 above
+#
+xcuserdata/**/*
+
+#     (requires option 2 above): Personal Schemes
+#
+!xcuserdata/**/xcschemes/*
