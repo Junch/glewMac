@@ -11,7 +11,6 @@
 		8EA6A33616CCC694009FCD0C /* phong.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EA6A33316CCC66D009FCD0C /* phong.cpp */; };
 		8EA6A33916CCC6C6009FCD0C /* phong.frag in Resources */ = {isa = PBXBuildFile; fileRef = 8EA6A33416CCC66D009FCD0C /* phong.frag */; };
 		8EA6A33A16CCC6C6009FCD0C /* phong.vert in Resources */ = {isa = PBXBuildFile; fileRef = 8EA6A33516CCC66D009FCD0C /* phong.vert */; };
-		8EFFA93016CCB246003E61B3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFFA92F16CCB246003E61B3 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +37,6 @@
 		8EA6A33416CCC66D009FCD0C /* phong.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = phong.frag; path = ../phong/phong.frag; sourceTree = "<group>"; };
 		8EA6A33516CCC66D009FCD0C /* phong.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = phong.vert; path = ../phong/phong.vert; sourceTree = "<group>"; };
 		8EFFA92C16CCB246003E61B3 /* phongapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = phongapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EFFA92F16CCB246003E61B3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +45,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EA6A31616CCB894009FCD0C /* OpenGL.framework in Frameworks */,
-				8EFFA93016CCB246003E61B3 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				8EA6A31516CCB894009FCD0C /* OpenGL.framework */,
-				8EFFA92F16CCB246003E61B3 /* Cocoa.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
