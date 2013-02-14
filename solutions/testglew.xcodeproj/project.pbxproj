@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8EBC0EDE16C7BB5F00CD4DB9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EBC0EDD16C7BB5F00CD4DB9 /* main.cpp */; };
-		8EBC0EE916C7DC7400CD4DB9 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EBC0EE816C7DC7400CD4DB9 /* GLUT.framework */; };
 		8EDD29F016CA35DE00AF1308 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EDD29EF16CA35DE00AF1308 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +44,6 @@
 		8E08FF9F16CA6FD90011819A /* common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = common.xcodeproj; sourceTree = SOURCE_ROOT; };
 		8EBC0EDA16C7BB5F00CD4DB9 /* testglew */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testglew; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EBC0EDD16C7BB5F00CD4DB9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../testglew/main.cpp; sourceTree = SOURCE_ROOT; };
-		8EBC0EE816C7DC7400CD4DB9 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		8EDD29EF16CA35DE00AF1308 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -55,7 +53,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EDD29F016CA35DE00AF1308 /* OpenGL.framework in Frameworks */,
-				8EBC0EE916C7DC7400CD4DB9 /* GLUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +72,6 @@
 			children = (
 				8E08FF9F16CA6FD90011819A /* common.xcodeproj */,
 				8EDD29EF16CA35DE00AF1308 /* OpenGL.framework */,
-				8EBC0EE816C7DC7400CD4DB9 /* GLUT.framework */,
 				8EBC0EDC16C7BB5F00CD4DB9 /* testglew */,
 				8EBC0EDB16C7BB5F00CD4DB9 /* Products */,
 			);

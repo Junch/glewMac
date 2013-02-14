@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8EB2BE1616CA8D1000AF4848 /* phong.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EB2BE1516CA8D1000AF4848 /* phong.cpp */; };
-		8EB2BE2516CA8E7100AF4848 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB2BE2416CA8E7100AF4848 /* GLUT.framework */; };
 		8EB2BE2716CA8E7800AF4848 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB2BE2616CA8E7800AF4848 /* OpenGL.framework */; };
+		8EFFA91F16CCAAA6003E61B3 /* phong.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EFFA91C16CCAAA6003E61B3 /* phong.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,10 +42,11 @@
 
 /* Begin PBXFileReference section */
 		8EB2BE0916CA8C9800AF4848 /* phong */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = phong; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EB2BE1516CA8D1000AF4848 /* phong.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = phong.cpp; path = ../../phong/phong.cpp; sourceTree = "<group>"; };
 		8EB2BE1E16CA8E6000AF4848 /* common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = common.xcodeproj; sourceTree = "<group>"; };
-		8EB2BE2416CA8E7100AF4848 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		8EB2BE2616CA8E7800AF4848 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		8EFFA91C16CCAAA6003E61B3 /* phong.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = phong.cpp; sourceTree = "<group>"; };
+		8EFFA91D16CCAAA6003E61B3 /* phong.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = phong.frag; sourceTree = "<group>"; };
+		8EFFA91E16CCAAA6003E61B3 /* phong.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = phong.vert; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EB2BE2716CA8E7800AF4848 /* OpenGL.framework in Frameworks */,
-				8EB2BE2516CA8E7100AF4848 /* GLUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,10 +64,9 @@
 		8EB2BE0016CA8C9800AF4848 = {
 			isa = PBXGroup;
 			children = (
-				8EB2BE2616CA8E7800AF4848 /* OpenGL.framework */,
-				8EB2BE2416CA8E7100AF4848 /* GLUT.framework */,
 				8EB2BE1E16CA8E6000AF4848 /* common.xcodeproj */,
-				8EB2BE0B16CA8C9800AF4848 /* phong */,
+				8EB2BE2616CA8E7800AF4848 /* OpenGL.framework */,
+				8EFFA91B16CCAAA6003E61B3 /* phong */,
 				8EB2BE0A16CA8C9800AF4848 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,20 +79,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8EB2BE0B16CA8C9800AF4848 /* phong */ = {
-			isa = PBXGroup;
-			children = (
-				8EB2BE1516CA8D1000AF4848 /* phong.cpp */,
-			);
-			path = phong;
-			sourceTree = SOURCE_ROOT;
-		};
 		8EB2BE1F16CA8E6000AF4848 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				8EB2BE2316CA8E6100AF4848 /* libcommon.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8EFFA91B16CCAAA6003E61B3 /* phong */ = {
+			isa = PBXGroup;
+			children = (
+				8EFFA91C16CCAAA6003E61B3 /* phong.cpp */,
+				8EFFA91D16CCAAA6003E61B3 /* phong.frag */,
+				8EFFA91E16CCAAA6003E61B3 /* phong.vert */,
+			);
+			name = phong;
+			path = ../phong;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,7 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EB2BE1616CA8D1000AF4848 /* phong.cpp in Sources */,
+				8EFFA91F16CCAAA6003E61B3 /* phong.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
